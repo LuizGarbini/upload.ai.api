@@ -24,3 +24,16 @@ Content-Type: application/json
 {
     "prompt": "nextjs, javascript"
 }
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+
+{
+    "videoId": "04a916bf-ba1b-4dd8-9ede-f95dc36f96de",
+    "temperature":0.5,
+    "template": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''"
+}
